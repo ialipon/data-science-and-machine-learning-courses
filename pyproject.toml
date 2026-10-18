@@ -5,6 +5,7 @@ description = "Data Science and Machine Learning Courses Material"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "ipywidgets>=8.1.9",
     "jupyter>=1.1.1",
     "matplotlib>=3.11.1",
     "notebook>=7.6.2",

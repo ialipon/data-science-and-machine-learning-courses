@@ -24,5 +24,6 @@
   },
   "workbench.colorTheme": "Tomorrow Night Blue",
   "workbench.iconTheme": "material-icon-theme",
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "notebook.lineNumbers": "on"
 }

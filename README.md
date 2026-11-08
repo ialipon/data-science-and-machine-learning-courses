@@ -6,7 +6,7 @@ Python fundamentals, numpy, pandas, matplotlib, and scikit-learn.
 ## 📑 Course outline
 
 Each module is a folder under `tutorial/` with one Jupyter notebook per lesson.
-Modules 3 to 5 work with the real Our World in Data CO2 emissions dataset in
+Modules 3 to 6 work with the real Our World in Data CO2 emissions dataset in
 `data/owid-co2-data.csv`.
 
 | Module | Topic | Lessons |
@@ -16,7 +16,7 @@ Modules 3 to 5 work with the real Our World in Data CO2 emissions dataset in
 | 3 | [Pandas](tutorial/03-pandas/) | 3.1 Series and DataFrame basics · 3.2 Reading and writing data · 3.3 Selecting and filtering · 3.4 Rename, add, drop columns · 3.5 Handling missing data · 3.6 Groupby and aggregation · 3.7 Merge and join · 3.8 Reshaping with pivot tables |
 | 4 | [NumPy](tutorial/04-numpy/) | 4.1 Arrays basics · 4.2 Indexing, slicing, reshaping · 4.3 Math and statistics · 4.4 DataFrame and 2D array conversion |
 | 5 | [matplotlib](tutorial/05-matplotlib/) | 5.1 CO2 emissions plots |
-| 6 | scikit-learn | Planned |
+| 6 | [Supervised Learning](tutorial/06-supervised-learning/) | 6.1 K-Nearest Neighbors (KNN) · 6.2 Linear models · 6.3 Random forest · 6.4 Artificial neural networks (ANN) |
 
 **Module 1 – Environment Setup.** Install VS Code, Python and `uv`, create a project
 with a virtual environment, and run Jupyter. Slides live in `slides/`.
@@ -37,8 +37,23 @@ and a 2D array.
 
 **Module 5 – matplotlib.** Visualise the CO2 dataset using `Pandas` and `matplotlib`.
 
-**Module 6 – scikit-learn.** Introductory machine learning on the course dataset
-(coming later).
+**Module 6 – Supervised Learning.** Introductory machine learning with scikit-learn
+on the CO2 dataset:
+
+- **6.1 KNN** – clean the data, label each country's CO2 growth as increasing or
+  decreasing, split with `train_test_split`, train a `KNeighborsClassifier` on GDP and
+  CO2 per capita, and tune its hyper-parameters.
+- **6.2 Linear models** – relate world CO2 emissions (oil, gas, coal, flaring, cement)
+  to temperature change with `LinearRegression`, interpret coefficients on
+  standardized inputs, compare regression models, and fit a multi-variable model.
+- **6.3 Random forest** – turn a time series into input/output pairs with a sliding
+  window, split by year instead of random shuffling, and see why a
+  `RandomForestRegressor` can't extrapolate beyond its training range (and how
+  predicting growth rate fixes it). `sliding_window.ipynb` is an interactive demo of
+  the sliding-window idea.
+- **6.4 ANN models** – build `MLPRegressor` models for temperature change, tune the
+  number of neurons in the hidden layers, and plot RMSE against the number of
+  training iterations.
 
 ## ⚙️ Start here
 
